@@ -1,0 +1,37 @@
+@import "variables.scss";
+
+.footer {
+  padding: 65px 80px 15px;
+
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 13px;
+
+  background-color: rgb(41, 41, 41);
+
+  & hr {
+    height: 1px;
+    border: none;
+    background-color: rgb(150, 150, 150);  
+  }
+
+  &__logo-wrapper {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  &__logo {
+    margin-bottom: 30px;
+  }
+
+  @import "navigation.scss";
+}
+
+.moveup {
+  position: fixed;
+  right: 16px;
+  bottom: 24px;
+}
+
+@import "footer_media-tablet.scss";
+@import "footer_media-mobile.scss";

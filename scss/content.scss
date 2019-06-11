@@ -1,0 +1,20 @@
+.headline {
+  margin-bottom: 16px;
+  
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 34px;
+  color: #1D1D1D;
+}
+
+.main-content {
+  margin-top: 15px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-gap: 15px;
+  justify-content: center;
+
+  @import "restaurant-card.scss";
+}

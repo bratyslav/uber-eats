@@ -1,0 +1,41 @@
+@media (max-width: 749px) {
+  .delivery-address-mobile {
+    margin-top: 40px;
+    display:  flex;
+    width: 90vw;
+    justify-content: center;
+
+    .delivery-address {
+      &__store-field {
+        width: 57px;
+      }
+  
+      &__store-input {
+        border: none;
+        outline: none;
+        width: 50px;
+      }
+  
+      &__user-address-field {
+        width: 180px;
+      }
+  
+      &__user-address-input {
+        border: none;
+        outline: none;
+        width: 140px;
+      }
+    }
+
+ 
+  }
+
+  .header {
+    padding: 0;
+  }
+
+  .delivery-address,
+  .shopping-icon {
+    display: none;
+  }
+}

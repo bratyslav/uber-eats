@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Uber Eats</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link href="./style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <a href="#">
+      <h1><img src="./images/uber_eats.png" alt="Uber eats"></h1>
+    </a>
+    
+    <div  class="header__wrapper">
+      <form action="#" method="POST">
+        <div class="delivery-address">
+
+          <div class="delivery-address__store-field">
+            <input 
+              type="text" 
+              class="delivery-address__store-input" 
+              name="store" 
+              aria-describedby="store address"
+            >
+          </div>
+
+          <div class="delivery-address__to">
+              to
+          </div>
+
+          <div class="delivery-address__user-address-field">
+            <div class="delivery-address__gps-icon"></div>
+            <input 
+              type="text" 
+              class="delivery-address__user-address-input" 
+              name="user-address" 
+              aria-describedby="user address"
+            >
+          </div>  
+        </div>
+      </form>
+
+      <div class="log-in">
+        <a class="log-in__sign-in" href="#">Sign In</a>
+        <a class="log-in__register" href="#">Register</a>
+        <a href="#" class="shopping-icon">
+          <img src="./images/icon.png" alt="link to shop">
+        </a>  
+      </div> 
+    </div>
+  </header>
+
+  <main>
+    <div class="search">
+      <div class="search__icon"></div>
+      <form action="#" method="POST">
+          <input type="text" size="20" placeholder="Search for restaurant...">
+      </form>
+    </div>
+    <hr class="search__underline">
+
+    <form action="#" method="POST">
+      <div class="delivery-address-mobile">
+        <div class="delivery-address__store-field">
+          <input 
+            type="text" 
+            class="delivery-address__store-input" 
+            name="store" 
+            aria-describedby="store address"
+          >
+        </div>
+
+        <div class="delivery-address__to">
+            to
+        </div>
+        
+        <div class="delivery-address__user-address-field">
+          <div class="delivery-address__gps-icon"></div>
+          <input 
+            type="text" 
+            class="delivery-address__user-address-input" 
+            name="user-address" 
+            aria-describedby="store address"
+          >
+        </div>  
+      </div>
+    </form>
+
+    <div class="main-content-wrapper">
+      <h2 class="headline">Kyiv Restaurants</h2>
+      
+      <div class="main-content">
+        <a href="#" class="restaurant-card__wrapper-link">
+          <div class="restaurant-card">
+            <div href="#" class="restaurant-card__image _1"></div>    
+
+            <div class="restaurant-card__restaurant-name">
+              <h3>Макдоналдс</h3>
+            </div>
+
+            <div class="restaurant-card__type-of-dishes"> 
+              <h4>&#8372;&#8372; &middot; Бургери</h4>
+            </div>
+
+            <div class="restaurant-card__time-of-delivery">
+              <h5>25 - 35 Min</h5>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="restaurant-card__wrapper-link">
+          <div class="restaurant-card">
+            <div class="restaurant-card__image _2"></div>
+            
+            <div class="restaurant-card__restaurant-name">
+              <h3>WOKWEI</h3>
+            </div>
+    
+            <div class="restaurant-card__type-of-dishes"> 
+              <h4>&#8372; &middot; Китайска &middot; Азiатська</h4>
+            </div>
+    
+            <div class="restaurant-card__time-of-delivery">
+              <h5>40 - 50 Min</h5>
+            </div>
+          </div>
+        </a>
+        
+        <a href="#" class="restaurant-card__wrapper-link">
+          <div class="restaurant-card">
+            <div class="restaurant-card__image _3"></div>
+            
+            <div class="restaurant-card__restaurant-name">
+              <h3>YIZHA</h3>
+            </div>
+    
+            <div class="restaurant-card__type-of-dishes"> 
+              <h4>&#8372;&#8372; &middot; Американська &middot; Бургери</h4>
+            </div>
+    
+            <div class="restaurant-card__time-of-delivery">
+              <h5>35 - 45 Min</h5>
+            </div>
+          </div>
+        </a>
+      
+        <a href="#" class="restaurant-card__wrapper-link">
+          <div class="restaurant-card">
+            <div class="restaurant-card__image _4"></div>
+            
+            <div class="restaurant-card__restaurant-name">
+              <h3>Musafir</h3>
+            </div>
+    
+            <div class="restaurant-card__type-of-dishes"> 
+              <h4>&#8372;&#8372; &middot; Близькосхiдна</h4>
+            </div>
+    
+            <div class="restaurant-card__time-of-delivery">
+              <h5>30 - 40 Min</h5>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="restaurant-card__wrapper-link">
+          <div class="restaurant-card">
+            <div class="restaurant-card__image _5"></div>
+            
+            <div class="restaurant-card__restaurant-name">
+              <h3>WOKWEI</h3>
+            </div>
+    
+            <div class="restaurant-card__type-of-dishes"> 
+              <h4>&#8372; &middot; Китайска &middot; Азiатська</h4>
+            </div>
+    
+            <div class="restaurant-card__time-of-delivery">
+              <h5>40 - 50 Min</h5>
+            </div>
+          </div>
+        </a>  
+
+        <a href="#" class="restaurant-card__wrapper-link">
+          <div class="restaurant-card">
+            <div class="restaurant-card__image _6"></div>
+            
+            <div class="restaurant-card__restaurant-name">
+              <h3>Milk Bar</h3>
+            </div>
+    
+            <div class="restaurant-card__type-of-dishes"> 
+              <h4>&#8372;&#8372; &middot; Десерти</h4>
+            </div>
+    
+            <div class="restaurant-card__time-of-delivery">
+              <h5>25 - 35 Min</h5>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="restaurant-card__wrapper-link">
+          <div class="restaurant-card">
+            <div class="restaurant-card__image _7"></div>
+            
+            <div class="restaurant-card__restaurant-name">
+              <h3>Mimosa Brooklyn Pizza</h3>
+            </div>
+    
+            <div class="restaurant-card__type-of-dishes"> 
+              <h4>
+                &#8372;&#8372; &middot; Iталiйська &middot; Пiцца &middot; Американська
+              </h4>
+            </div>
+    
+            <div class="restaurant-card__time-of-delivery">
+              <h5>15 - 25 Min</h5>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="restaurant-card__wrapper-link">
+          <div class="restaurant-card">
+            <div class="restaurant-card__image _8"></div>
+            
+            <div class="restaurant-card__restaurant-name">
+              <h3>To Be</h3>
+            </div>
+    
+            <div class="restaurant-card__type-of-dishes"> 
+              <h4>
+                &#8372;&#8372; &middot; Японська &middot; Азiатська &middot; Сушi
+              </h4>  
+            </div>
+    
+            <div class="restaurant-card__time-of-delivery">
+              <h5>25 - 35 Min</h5>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="restaurant-card__wrapper-link">
+          <div class="restaurant-card">
+            <div class="restaurant-card__image _9"></div>
+            
+            <div class="restaurant-card__restaurant-name">
+                <h3>Druzi Cafe</h3>
+            </div>
+    
+            <div class="restaurant-card__type-of-dishes"> 
+              <h4>&#8372;&#8372; &middot; Американська</h4>
+            </div>
+    
+            <div class="restaurant-card__time-of-delivery">
+              <h5>30 - 40 Min</h5>
+            </div>
+          </div>
+        </a>  
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__logo-wrapper">
+      <a href="#">
+        <img class="footer__logo" src="./images/uber-eats-header-logo.png" alt="footer of page">
+      </a>  
+      <hr>
+    </div>
+
+    <nav class="nav">
+      <div class="nav__language">
+        <select class="nav__language-select" name="language-selection">
+          <option value="english" selected>english</option>
+          <option value="rusian">русский</option>
+          <option value="ukrainian">українська</option>
+        </select>
+      </div>
+      <div>
+        <a href="#">About UberEats</a>
+      </div>
+      <div>
+          <a href="#">See all sities</a>
+      </div>
+
+      <div>
+          <a href="#">Become a Delivery Partner</a>
+      </div>
+      <div>
+          <a href="#">Pricing</a>
+      </div>
+
+      <div class="nav__hashtag">
+        <span class="hashtag__hash">#</span>
+        <a href="#">UberEats</a>
+      </div>
+      <div>
+          <a href="#">Become a Restaurant Partner</a>
+      </div>
+      <div>
+          <a href="#">Help</a>
+      </div>
+
+      <div>
+          <a href="#">
+            <img src="./images/share-icons.png" alt="link to share">
+          </a>  
+      </div>
+      <div></div>
+      <div>
+          <a href="#">FAQs</a>
+      </div>
+
+      <div class="nav__horizontal-line">
+        <hr>
+      </div>
+
+      <div class="nav__app-stores">
+        <a href="#">
+          <img src="./images/appstore-icon.png" alt="link to app sore">
+        </a>
+
+        <a href="#">  
+          <img src="./images/googleplay-icon.png" alt="link to google play store">
+        </a>
+      </div>
+
+      <div class="nav__horizontal-line">
+        <hr>
+      </div>
+
+      <div>
+        <a href="#">&copy; 2019 Uber Technologies Inc.</a>
+      </div>
+      <div>
+          <a href="#">Privacy</a>
+      </div>
+      <div>
+          <a href="#">Terms</a>
+      </div>
+      
+    </nav> 
+
+  <div class="moveup">
+    <a href="#">
+      <img src="./images/moveup-buttom.png" alt="move up button">
+    </a>
+  </div> 
+  </footer>
+</body>
+</html>

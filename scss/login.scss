@@ -1,0 +1,39 @@
+.log-in {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__sign-in {
+    color: black;
+    border: 1px solid #E0E0E0;
+  }
+
+  &__register {
+    color: white;
+    background-color: black;
+  }
+
+  &__sign-in,
+  &__register {
+    width: 80px;
+
+    margin-right: 16px;
+
+    text-align: center;
+    line-height: 38px;
+
+    text-decoration: none;
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 13px;
+  }
+
+  &__register:hover {
+    background-color: #00cd5b;
+  }
+
+  &__sign-in:hover {
+    background-color: #00cd5b;
+    color: white;
+  }
+}
