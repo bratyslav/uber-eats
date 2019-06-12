@@ -1,0 +1,342 @@
+body {
+  margin: 0; }
+
+h1, h2, h3, h4, h5 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  font-weight: normal;
+  font-size: 1em; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 73px;
+  box-shadow: 0 2px 6px rgba(38, 38, 38, 0.16); }
+  .header__wrapper {
+    display: flex;
+    justify-content: center; }
+
+h1 {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0; }
+
+.delivery-address-mobile {
+  display: none; }
+
+.delivery-address {
+  display: flex;
+  justify-content: center;
+  margin-right: 92px;
+  padding: 17px 0 14px; }
+  .delivery-address__to {
+    margin: 13px 4px 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.75px;
+    color: #b4b4b4; }
+  .delivery-address__store-field {
+    width: 65px;
+    justify-content: center;
+    padding-left: 4px; }
+  .delivery-address__user-address-field {
+    width: 292px;
+    justify-content: flex-start; }
+  .delivery-address__store-field, .delivery-address__user-address-field {
+    display: flex;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box; }
+  .delivery-address__store-input {
+    width: 50px; }
+  .delivery-address__gps-icon {
+    width: 21px;
+    height: 39px;
+    margin: 0 5px;
+    background: url(./images/gps_icon.png) center no-repeat; }
+  .delivery-address input[type="text"] {
+    border: none;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px; }
+
+input[type="submit"] {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0; }
+
+.log-in {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .log-in__sign-in {
+    color: black;
+    border: 1px solid #E0E0E0; }
+  .log-in__register {
+    color: white;
+    background-color: black; }
+  .log-in__sign-in, .log-in__register {
+    width: 80px;
+    margin-right: 16px;
+    text-align: center;
+    line-height: 38px;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 13px; }
+  .log-in__register:hover {
+    background-color: #00cd5b; }
+  .log-in__sign-in:hover {
+    background-color: #00cd5b;
+    color: white; }
+
+@media (max-width: 993px) {
+  .delivery-address {
+    margin-right: 22px; }
+    .delivery-address__store-field {
+      width: 57px; }
+    .delivery-address__store-input {
+      width: 50px; }
+    .delivery-address__user-address-field {
+      width: 215px; }
+    .delivery-address__user-address-input {
+      width: 180px; } }
+@media (min-width: 750px) and (max-width: 880px) {
+  .header {
+    padding: 0; }
+
+  .delivery-address {
+    margin-right: 88px; }
+    .delivery-address__store-field {
+      width: 57px; }
+    .delivery-address__store-input {
+      width: 50px; }
+    .delivery-address__user-address-field {
+      width: 215px; }
+    .delivery-address__user-address-input {
+      width: 180px; } }
+@media (max-width: 749px) {
+  .delivery-address-mobile {
+    margin-top: 40px;
+    display: flex;
+    width: 90vw;
+    justify-content: center; }
+    .delivery-address-mobile .delivery-address__store-field {
+      width: 57px; }
+    .delivery-address-mobile .delivery-address__store-input {
+      border: none;
+      outline: none;
+      width: 50px; }
+    .delivery-address-mobile .delivery-address__user-address-field {
+      width: 180px; }
+    .delivery-address-mobile .delivery-address__user-address-input {
+      border: none;
+      outline: none;
+      width: 140px; }
+
+  .header {
+    padding: 0; }
+
+  .delivery-address,
+  .shopping-icon {
+    display: none; } }
+main {
+  padding: 35px 80px; }
+  main .headline {
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    line-height: 34px; }
+  main .main-content-wrapper {
+    margin-top: 50px; }
+
+.search {
+  display: flex; }
+  .search form {
+    line-height: 39px; }
+  .search__underline {
+    height: 1px;
+    border: none;
+    background-color: #d1d1d1; }
+  .search input {
+    border: none;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px; }
+  .search__icon {
+    width: 30px;
+    height: 39px;
+    background: url(./images/search_icon.png) center no-repeat; }
+
+.headline {
+  margin-bottom: 16px;
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 34px;
+  color: #1D1D1D; }
+
+.main-content {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-gap: 15px;
+  justify-content: center; }
+  .main-content .restaurant-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+    .main-content .restaurant-card__wrapper-link {
+      text-decoration: none; }
+    .main-content .restaurant-card__image {
+      height: 256px;
+      background-size: cover;
+      background-position: center center;
+      position: relative;
+      top: 0;
+      -webkit-transition: top 0.3s ease-out 0s;
+      -moz-transition: top 0.3s ease-out 0s;
+      -o-transition: top 0.3s ease-out 0s;
+      transition: top 0.3s ease-out 0s; }
+    .main-content .restaurant-card__image:hover {
+      top: -8px; }
+    .main-content .restaurant-card ._1 {
+      background-image: url(macdonalds.png); }
+    .main-content .restaurant-card ._2 {
+      background-image: url(2.png); }
+    .main-content .restaurant-card ._3 {
+      background-image: url(3.png); }
+    .main-content .restaurant-card ._4 {
+      background-image: url(4.png); }
+    .main-content .restaurant-card ._5 {
+      background-image: url(5.png); }
+    .main-content .restaurant-card ._6 {
+      background-image: url(6.png); }
+    .main-content .restaurant-card ._7 {
+      background-image: url(7.png); }
+    .main-content .restaurant-card ._8 {
+      background-image: url(8.png); }
+    .main-content .restaurant-card ._9 {
+      background-image: url(9.png); }
+    .main-content .restaurant-card__restaurant-name {
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      color: black;
+      padding-top: 15px; }
+    .main-content .restaurant-card__type-of-dishes {
+      padding-top: 3px;
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      line-height: 21px;
+      color: #626262; }
+    .main-content .restaurant-card__time-of-delivery {
+      padding: 3px 0 20px;
+      font-family: "Roboto", sans-serif;
+      font-size: 13px;
+      line-height: 24px;
+      color: black; }
+
+@media (min-width: 750px) and (max-width: 880px) {
+  main {
+    padding: 35px 8px; }
+
+  .main-content {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); } }
+@media (max-width: 749px) {
+  main {
+    padding: 35px 8px; } }
+.footer {
+  padding: 65px 80px 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  background-color: #292929; }
+  .footer hr {
+    height: 1px;
+    border: none;
+    background-color: #969696; }
+  .footer__logo-wrapper {
+    grid-column-start: 1;
+    grid-column-end: 4; }
+  .footer__logo {
+    margin-bottom: 30px; }
+  .footer .nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    align-items: center;
+    line-height: 40px; }
+    .footer .nav a {
+      text-decoration: none;
+      color: white; }
+    .footer .nav__language {
+      grid-row-start: 1;
+      grid-row-end: 3;
+      display: flex;
+      height: 40px; }
+    .footer .nav__language-select {
+      width: 227px;
+      padding: 12px 0 12px 48px;
+      color: #fff;
+      text-transform: uppercase;
+      cursor: pointer;
+      background-color: #3B3B3B;
+      background-image: url(./world.svg), url(./select-icon.svg);
+      background-position: left 16px top 12px, right 8px top 16px;
+      background-repeat: no-repeat;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border: none;
+      border-radius: 2px; }
+    .footer .nav__hashtag {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 16px; }
+      .footer .nav__hashtag .hashtag__hash {
+        color: #49A144; }
+    .footer .nav__horizontal-line {
+      grid-column-start: 1;
+      grid-column-end: 4; }
+    .footer .nav__app-stores {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 6;
+      grid-row-end: 8;
+      margin: auto;
+      margin-top: 17px;
+      line-height: 44px; }
+      .footer .nav__app-stores img:not(:last-child) {
+        margin-right: 40px; }
+
+.moveup {
+  position: fixed;
+  right: 16px;
+  bottom: 24px; }
+
+@media (min-width: 750px) and (max-width: 880px) {
+  .footer {
+    padding: 65px 8px; } }
+@media (max-width: 749px) {
+  .footer {
+    padding: 65px 8px 15px; }
+
+  .nav {
+    display: inline !important; } }
+
+/*# sourceMappingURL=style.css.map */

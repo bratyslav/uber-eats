@@ -1,0 +1,29 @@
+.search {
+  display: flex;
+
+  & form {
+    line-height: 39px;
+  }
+
+  &__underline {
+    height: 1px;
+    border: none;
+    background-color: rgb(209, 209, 209);  
+  }
+
+  & input {
+    border: none;
+    outline: none;
+
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  &__icon {
+    width: 30px;
+    height: 39px;
+
+    background: url(./images/search_icon.png) center no-repeat;
+  }
+}

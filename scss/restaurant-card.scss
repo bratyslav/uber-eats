@@ -1,0 +1,89 @@
+.restaurant-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &__wrapper-link {
+    text-decoration: none;
+  }
+
+  &__image {
+    height: 256px;
+    background-size: cover;
+    background-position: center center;
+
+    position: relative;
+    top: 0;
+    -webkit-transition: top 0.3s ease-out 0s;
+    -moz-transition: top 0.3s ease-out 0s;
+    -o-transition: top 0.3s ease-out 0s;
+    transition: top 0.3s ease-out 0s;
+  }
+
+  &__image:hover {
+    top: -8px;
+  }
+
+  ._1 {
+    background-image: url(macdonalds.png);
+  }
+
+  ._2 {
+    background-image: url(2.png);
+  }
+
+  ._3 {
+    background-image: url(3.png);
+  }
+
+  ._4 {
+    background-image: url(4.png);
+  }
+
+  ._5 {
+    background-image: url(5.png);
+  }
+
+  ._6 {
+    background-image: url(6.png);
+  }
+
+  ._7 {
+    background-image: url(7.png);
+  }
+
+  ._8 {
+    background-image: url(8.png);
+  }
+
+  ._9 {
+    background-image: url(9.png);
+  }
+
+  &__restaurant-name {
+    font-family: $main-font;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+
+    padding-top: 15px;
+  }
+
+  &__type-of-dishes {
+    padding-top: 3px;
+
+    font-family: $main-font;
+    font-size: 14px;
+    line-height: 21px;
+    color: #626262;
+  }
+
+  &__time-of-delivery {
+    padding: 3px 0 20px;
+
+    font-family: $main-font;
+    font-size: 13px;
+    line-height: 24px;
+    color: black;
+  }
+}

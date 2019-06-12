@@ -1,0 +1,25 @@
+@media (min-width: 750px) and (max-width: 880px) {
+  .header {
+    padding: 0;
+  }
+
+  .delivery-address {
+    margin-right: 88px;
+
+    &__store-field {
+      width: 57px;
+    }
+
+    &__store-input {
+      width: 50px;
+    }
+
+    &__user-address-field {
+      width: 215px;
+    }
+
+    &__user-address-input {
+      width: 180px;
+    }
+  }
+}

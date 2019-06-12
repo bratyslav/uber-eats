@@ -1,0 +1,21 @@
+@import "variables.scss";
+
+main {
+  padding: 35px 80px;
+
+  .headline {
+    font-family: $main-font;
+    font-size: 22px;
+    line-height: 34px;
+  }
+
+
+  .main-content-wrapper {
+    margin-top: 50px;
+  }
+}
+
+@import "search.scss";
+@import "content.scss";
+@import "main_media-tablet.scss";
+@import "main_media-mobile.scss";
